@@ -1,0 +1,70 @@
+@author: Hang Su
+
+
+*****************************
+1) File composition
+*****************************
+The programme contains 3 main files:
+- TR_driver.py
+- TR_gas.py
+- TR_ball.py
+
+and 1 ReadMe file.
+- ReadMe
+
+All 3 main files MUST be placed under the SAME repository.
+
+
+*****************************
+2) Implementation
+*****************************
+To implement the simulation, only run TR_driver.py with Python (version 3 or higher).
+
+The section in TR_driver.py, lines 27-81 provides the parameters that you may want to modify to investigate the physics.
+
+Defaults values of the parameters are good to go.
+
+No need to change any other code apart from this section.
+
+The first part in the section includes general settings, i.e., how you want to implement the simulation.
+
+The second part enables you to generate a new gas of desired properties.
+
+
+*****************************
+3) Saving and loading
+*****************************
+The programme enables you to save the current instance for later uses.
+
+At the end of each run, the current instance of gas will automatically be saved as '../TR_save'.
+
+If '../TR_save' already exists, the new file will OVERWRITE the previous file - change the name of saved file if you want to keep it.
+
+Change the value of 'enable_loading' in TR_driver.py, line 53 to enable/disable the loading function.
+
+Specify the saved file name in TR_driver.py, line 56, if necessary.
+
+
+*****************************
+4) Animation
+*****************************
+If using Spyder to implement the code, follow the procedures below to enable animations.
+
+- Do not use IPython console 
+
+- Select Python console window in Spyder -> close all tabs -> right click -> cLick 'Run' option -> nevigate to the repository -> Select TR_driver.py -> Run.
+
+Important note: Trying to use the opened Python console to run will fail. Therefore all tabs must be closed.
+
+For 3-D gases, animation can still be enabled, but only the projection will be plotted.
+
+
+*****************************
+5) Mixed particle and Brownian
+*****************************
+To generate gases containing mixed particles, simply append elements in TR_driver.py, lines 68-75.
+
+Change the value of the variable in TR_driver.py, lines 78-81 to enable/disable the investigation of Brownian particles.
+
+
+
